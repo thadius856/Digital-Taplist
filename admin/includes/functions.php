@@ -5,5 +5,7 @@ function redirect($url){
 }
 
 function encode($string){
-	return htmlentities ($string, ENT_QUOTES);
+	//$string = str_replace(array("\n", "\r"), '', $string);
+	$string = htmlentities ($string, ENT_QUOTES);
+	return $string;
 }
